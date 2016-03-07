@@ -1,76 +1,72 @@
 <div class="tree_background">
   
   <div class="content">
-    
       <div class="center login">
-       <button  class="btn_right titre" ng-click="switch()">{{logState}}</button>
+        <button  class="btn_right titre" ng-click="switch()">{{logState}}</button>
 
-       <div class="login_center">
-         
-         <div class="font-background "></div>
-         <h1 class="font-satisfy white_font">InstaGroot</h1>
+         <div class="login_center">
+           <form ng-show="log" ng-submit="checkUser()">
+            <h1 class="font-satisfy white_font">InstaGroot</h1>
+            <div class="highlihgt1"></div>
 
-
-
-         <form ng-show="log" ng-submit="checkUser()">
-
-          <h2 class="white_font">Log In</h2>
-          <input class="btn" type="text" placeholder="username"
-                ng-model="username"
-                pattern=".{3,20}"
-                required title="between 3 and 20 letters"
-                required>
-
-          <input class="btn"type="password" placeholder="password"
-                ng-model="password"
-                pattern=".{3,15}"
-                required title="between 3 and 15 letters"
-                required>
-          <button class="btn" type="submit">confirm</button>
-         </form>
-       </div>
-
-
-
-       <form ng-hide="log" ng-submit="createUser()">
-        <h2 class="white_font">Sign Up</h2>
-        <input class="btn" type="text" placeholder="name"
-              ng-model="name"
-              ng-minlength="3"
-                  ng-maxlength="20"
+            <h2 class="white_font">Log In</h2>
+            <input class="btn" type="text" placeholder="username"
+                  ng-model="username"
+                  pattern=".{3,20}"
+                  required title="between 3 and 20 letters"
                   required>
 
-        <input class="btn" type="text" placeholder="lastname"
-              ng-model="lastname"
-              ng-minlength="3"
-                  ng-maxlength="20"
-                  required>
-
-        <input class="btn" type="text" placeholder="username"
-              ng-model="username"
-              ng-minlength="3"
-                  ng-maxlength="20"
-                  required title=between 3 and 20 letters"
-                  required>
-
-        <input class="btn" type="password" placeholder="password"
-                   ng-model="password"
-              ng-minlength="3"
-                  ng-maxlength="15"
+            <input class="btn"type="password" placeholder="password"
+                  ng-model="password"
+                  pattern=".{3,15}"
                   required title="between 3 and 15 letters"
                   required>
+            <button class="btn" type="submit">confirm</button>
+           </form>
+         </div>
 
-        <input class="btn" type="password" placeholder="confirm password"
-                   ng-model="passwordConf"
-              ng-minlength="3"
-                  ng-maxlength="15"
-                  required title="between 6 and 15 letters"
-                  required>
+         <div class="signUp_center">
+           <form ng-hide="log" ng-submit="createUser()">
+            <h1 class="font-satisfy white_font">InstaGroot</h1>
+            <h2 class="white_font">Sign Up</h2>
+            <div class="highlihgt2"></div>
+            <input class="btn" type="text" placeholder="name"
+                  ng-model="name"
+                  ng-minlength="3"
+                      ng-maxlength="20"
+                      required>
 
-        <button class="btn" type="submit">confirm</button>
-       </form>
-    </div>
+            <input class="btn" type="text" placeholder="lastname"
+                  ng-model="lastname"
+                  ng-minlength="3"
+                      ng-maxlength="20"
+                      required>
 
+            <input class="btn" type="text" placeholder="username"
+                  ng-model="username"
+                  ng-minlength="3"
+                      ng-maxlength="20"
+                      required title="between 3 and 20 letters
+                      required">
+
+            <input class="btn" type="password" placeholder="password"
+                       ng-model="password"
+                  ng-minlength="3"
+                      ng-maxlength="15"
+                      required title="between 3 and 15 letters"
+                      required>
+
+            <input class="btn" type="password" placeholder="confirm password"
+                       ng-model="passwordConf"
+                  ng-minlength="3"
+                      ng-maxlength="15"
+                      required title="between 6 and 15 letters"
+                      required>
+
+            <button class="btn" type="submit">confirm</button>
+           </form>
+         </div>
+      </div>
   </div>
 
 
