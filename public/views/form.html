@@ -1,63 +1,81 @@
-<div class="center login">
-   <button  class="titre" ng-click="switch()">{{logState}}</button>
+<div class="tree_background">
+  
+  <div class="content">
+    
+      <div class="center login">
+       <button  class="btn_right titre" ng-click="switch()">{{logState}}</button>
 
-   <h1 class="font-satisfy">InstaGroot</h1>
-
-
-   <form ng-show="log" ng-submit="checkUser()">
-
-    <h2>Log In</h2>
-    <input type="text" placeholder="username"
-          ng-model="username"
-          pattern=".{3,20}"
-          required title="entre 3 et 20 miaous"
-          required>
-
-    <input type="password" placeholder="password"
-          ng-model="password"
-          pattern=".{3,15}"
-          required title="entre 3 et 15 miaous"
-          required>
-    <button type="submit">clik</button>
-   </form>
+       <div class="login_center">
+         
+         <div class="font-background "></div>
+         <h1 class="font-satisfy white_font">InstaGroot</h1>
 
 
 
-   <form ng-hide="log" ng-submit="createUser()">
-    <h2>Sign Up</h2>
-    <input type="text" placeholder="name"
-          ng-model="name"
-          ng-minlength="3"
-              ng-maxlength="20"
-              required>
+         <form ng-show="log" ng-submit="checkUser()">
 
-    <input type="text" placeholder="lastname"
-          ng-model="lastname"
-          ng-minlength="3"
-              ng-maxlength="20"
-              required>
+          <h2 class="white_font">Log In</h2>
+          <input class="btn" type="text" placeholder="username"
+                ng-model="username"
+                pattern=".{3,20}"
+                required title="between 3 and 20 letters"
+                required>
 
-    <input type="text" placeholder="username"
-          ng-model="username"
-          ng-minlength="3"
-              ng-maxlength="20"
-              required title="entre 3 et 20 miaous"
-              required>
+          <input class="btn"type="password" placeholder="password"
+                ng-model="password"
+                pattern=".{3,15}"
+                required title="between 3 and 15 letters"
+                required>
+          <button class="btn" type="submit">confirm</button>
+         </form>
+       </div>
 
-    <input type="password" placeholder="password"
-               ng-model="password"
-          ng-minlength="3"
-              ng-maxlength="15"
-              required title="entre 3 et 15 miaous"
-              required>
 
-    <input type="password" placeholder="confirm password"
-               ng-model="passwordConf"
-          ng-minlength="3"
-              ng-maxlength="15"
-              required title="entre 6 et 15 miaous"
-              required>
 
-    <button type="submit">clik</button>
-   </form>
- </div>
+       <form ng-hide="log" ng-submit="createUser()">
+        <h2 class="white_font">Sign Up</h2>
+        <input class="btn" type="text" placeholder="name"
+              ng-model="name"
+              ng-minlength="3"
+                  ng-maxlength="20"
+                  required>
+
+        <input class="btn" type="text" placeholder="lastname"
+              ng-model="lastname"
+              ng-minlength="3"
+                  ng-maxlength="20"
+                  required>
+
+        <input class="btn" type="text" placeholder="username"
+              ng-model="username"
+              ng-minlength="3"
+                  ng-maxlength="20"
+                  required title=between 3 and 20 letters"
+                  required>
+
+        <input class="btn" type="password" placeholder="password"
+                   ng-model="password"
+              ng-minlength="3"
+                  ng-maxlength="15"
+                  required title="between 3 and 15 letters"
+                  required>
+
+        <input class="btn" type="password" placeholder="confirm password"
+                   ng-model="passwordConf"
+              ng-minlength="3"
+                  ng-maxlength="15"
+                  required title="between 6 and 15 letters"
+                  required>
+
+        <button class="btn" type="submit">confirm</button>
+       </form>
+    </div>
+
+  </div>
+
+
+</div>
+
+</svg>
+
+</body>

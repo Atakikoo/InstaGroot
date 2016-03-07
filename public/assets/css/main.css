@@ -1,9 +1,8 @@
 html {
-  overflow-y: scroll;
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -13,17 +12,13 @@ body {
 
 .center {
   text-align: center;
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .center-tabs {
   width: 215px;
   margin: 0 auto;
-}
-
-.center button {
-  width: 215px;
 }
 
 a, a:visited {
@@ -43,10 +38,21 @@ a:hover {
 
 .font-satisfy {
   font-family: 'Satisfy', cursive;
-  font-size: 60px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  font-size: 3.5em;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-align: center;
+  opacity: 1;
+  margin: 0;
+}
+
+.font-background {
+  background-color: #719401;
+  opacity: 0.8;
+}
+
+.white_font {
+  color: white;
 }
 
 #tag-title {
@@ -64,9 +70,25 @@ a:hover {
 
 /*Login form*/
 
+.tree_background {
+  height: 100%;
+  width: 100%;
+  background-image: url(./img/tree.png);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  position: fixed;
+  overflow-y: hidden;
+}
+
+.content {
+  height: 100%;
+  margin: 0%;
+}
+
 .titre {
   display: block;
-  margin: 30px auto;
+  font-size: 0.8em;
+  margin: 0;
 }
 
 .login {
@@ -83,15 +105,9 @@ a:hover {
   width: 200px;
 }
 
-.login button {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-}
-
-.login form {
-  width: 200px;
-  margin: 0 auto;
+.login {
+  width: 70%;
+  height: 100%;
 }
 
 .centerify h2 {
@@ -106,6 +122,22 @@ a:hover {
 .centerify button {
   margin: 0 auto;
   display: block;
+}
+
+.btn {
+  height: 10%;
+  width: 30%;
+  display: block;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.btn_right{
+  float: right;
+}
+
+.login_center {
+  margin: 5% 0px 0px 0px;
 }
 
 /*Header styles*/
@@ -131,7 +163,7 @@ a:hover {
 
 nav .link-main {
   font-family: 'Satisfy', cursive;
-  font-size: 25px;
+  font-size: 1.5rem;
   float: left;
 }
 
